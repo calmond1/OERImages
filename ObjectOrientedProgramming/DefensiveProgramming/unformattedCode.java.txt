@@ -1,0 +1,18 @@
+public void processOrder(Order order) {
+if (
+isValidOrder(order)) 
+{
+applyDiscount(order);
+calculateTax(order);
+updateInventory(order);
+notifyCustomer(order); }
+
+  
+
+}
+
+private boolean isValidOrder(Order order) 
+{ 
+	... 
+}
+...
