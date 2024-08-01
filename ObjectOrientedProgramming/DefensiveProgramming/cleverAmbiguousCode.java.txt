@@ -1,0 +1,3 @@
+ArrayList<Integer> result = data.stream()
+				.map(x => f(x))
+				.filter(x => x != null);
