@@ -1,0 +1,12 @@
+try  
+{
+    // Code that may throw an exception 
+}
+catch (Exception e)  
+{   
+    // Handle the exception 
+}
+finally
+{
+    // Code that should run either way
+}
