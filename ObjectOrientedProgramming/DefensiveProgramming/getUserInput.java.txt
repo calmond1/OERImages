@@ -1,0 +1,9 @@
+public int getUserInput()
+{
+	int input = 0;
+	Scanner scan = new Scanner(System.in);
+	
+	System.out.print("Enter a number between 1 - 5: ");
+	input = scan.nextInt();
+	return input;
+}
