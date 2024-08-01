@@ -1,0 +1,22 @@
+public int getUserInput()
+{
+	Scanner scan = new Scanner(System.in);  
+	int input = 0;  
+	  
+	do  
+	{
+		System.out.print("Enter a number between 1 - 5: ");  
+	    input = scan.nextInt();  
+	  
+	    scan.nextLine(); // Flush the \n from the scanner  
+	    
+		if (input >= 1 && input <= 5)  
+		{
+			return input;
+		}  
+		else  
+		{  
+			System.out.println("Invalid selection, try again");  
+	    }
+	}while(!(input >= 1 && input <= 5));
+}
