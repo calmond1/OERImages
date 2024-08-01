@@ -1,0 +1,24 @@
+public static void main(String[] args)
+{
+	Scanner scan = new Scanner(System.in);
+	EmployeeManagement em = new EmployeeManagement();
+	...
+	boolean status = false;	
+	do
+	{
+		System.out.print("Enter first name: ");
+		String first = scan.nextLine();
+		
+		System.out.print("Enter last name: ");
+		String last = scan.nextLine();
+		
+		Employee emp = em.search(first, last);
+				
+		status = em.removeEmployee(emp);
+		
+		if (status == false)
+		{
+			System.out.println("Employee not removed. Try again.");
+		}
+	}while(status != true);
+}
