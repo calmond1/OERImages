@@ -1,0 +1,5 @@
+// Poor practice
+if (employee.getDaysWorked() > 260) 
+{ 
+	... 
+}

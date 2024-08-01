@@ -1,0 +1,6 @@
+// Self-documenting
+private static final int WORKING_DAYS_PER_YEAR = 260;
+if (employee.getDaysWorked() > WORKING_DAYS_PER_YEAR) 
+{ 
+	... 
+}
