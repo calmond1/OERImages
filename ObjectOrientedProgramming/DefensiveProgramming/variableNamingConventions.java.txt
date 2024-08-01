@@ -1,0 +1,5 @@
+// Poor naming 
+int d; // elapsed time in days 
+
+// Self-documenting 
+int elapsedDays;
