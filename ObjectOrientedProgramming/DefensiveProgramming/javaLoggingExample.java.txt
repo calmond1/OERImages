@@ -1,0 +1,26 @@
+import java.io.IOException;  
+import java.io.InputStream;  
+import java.util.logging.LogManager;  
+import java.util.logging.Logger;  
+  
+public class Main  
+{  
+  public static void main(String[] args)  
+  {
+	  // Read logging properties from the file  
+	  try (InputStream is = Main.class.getClassLoader().getResourceAsStream("logging.properties"))
+	  {
+		  LogManager.getLogManager().readConfiguration(is); 
+      } 
+      catch (IOException e)  
+	  {  
+		  System.out.println(e.getMessage()); 
+      }
+      
+      // This creates a logger for the Main class, but will change if the class name is ever refactored  
+      Logger log = Logger.getLogger(Main.class.getName());
+      
+      log.info("This is an info message");
+      log.warning("This is a warning message");
+    }  
+}
