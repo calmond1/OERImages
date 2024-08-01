@@ -1,0 +1,13 @@
+public double calculateAverage(ArrayList<Integer> numbers)
+{
+	int sum = 0;
+	double avg = 0.0;
+	
+	for(Integer i : numbers)  
+	{  
+	  sum += i;  
+	}  
+	avg = (double) sum / list.size();
+	
+	return avg;
+}
