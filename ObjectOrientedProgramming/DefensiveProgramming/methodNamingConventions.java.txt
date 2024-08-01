@@ -1,0 +1,11 @@
+// Unclear
+public void process() 
+{ 
+	... 
+}
+
+// Self-documenting
+public void calculateMonthlyRevenue() 
+{ 
+	... 
+}

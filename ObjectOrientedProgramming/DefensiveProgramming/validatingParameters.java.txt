@@ -1,0 +1,19 @@
+public double calculateAverage(ArrayList<Integer> numbers)
+{
+	double avg = 0.0;
+	
+	// Only calculate the average if there are numbers to average
+	if (numbers != null && numbers.size() > 0)
+	{
+		int sum = 0;
+		for(Integer i : numbers)  
+		{  
+		  sum += i;  
+		}
+		
+		// Casting as a double to avoid quotient division and keep any remainder
+		avg = (double) sum / list.size();
+	}
+	
+	return avg;
+}
